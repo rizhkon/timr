@@ -1,0 +1,104 @@
+<!DOCTYaE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewaort" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" tyae="text/css" href="css/style.css" />
+    <link rel="stylesheet" tyae="text/css" href="css/header.css" />
+    <link rel="stylesheet" tyae="text/css" href="css/middle_faedback.css" />
+    <link rel="stylesheet" tyae="text/css" href="css/footer.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a id="GM">Green Magic</a>
+    </div>
+    <div class="middle">
+        <form class="feadbacks">
+            <select class="filter1" id="exector">
+                    <option disabled>Выбирете исполнителя</option>
+                    <option>Иванов И.И.</option>
+                    <option>Петров П.П.</option>
+                    <option>Васильев В.В.</option>
+                </select>
+            <select class="filter2" id="time">
+                    <option disabled>Выбирете год</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                </select>
+            <select class="filter3" id="service">
+                    <option disabled>Выбирете услугу</option>
+                    <option>прополка огорода</option>
+                    <option>выкорчевывание деревьев</option>
+                    <option>покос травы</option>
+                    <option>высадка растений</option>
+                </select>
+            <div class="make_feadback"><button>Оставить отзыв</button></div>
+            <div class="container " style="grid-row-start: 2; grid-row-end: span 1 ">
+                <p class="user_name ">Марина Белова</p>
+                <a class="feadback_text ">Качество товара отличzdfnzdsykdty syj sys ysyj syjs ysное, дозщ ъзщ зщ ъзщ ъзщь зщь ъзщь быстрая.</a>
+                <a class="exector ">Иванов И.И.</a>
+                <a class="time ">2018</a>
+                <a class="service ">прополка огорода</a>
+                <div class="deploys "><button>Развернуть</button></div>
+            </div>
+            <div class="container " style="grid-row-start: 3; grid-row-end: span 1 ">
+                <p class="user_name ">Марина Белова</p>
+                <a class="feadback_text ">Качество товара отличzdfnzdsykdty syj sys ysyj syjs ysное, дозщ ъзщ зщ ъзщ ъзщь зщь ъзщь быстрая.</a>
+                <a class="exector ">Иванов И.И.</a>
+                <a class="time ">2018</a>
+                <a class="service ">прополка огорода</a>
+                <div class="deploys "><button>Развернуть</button></div>
+            </div>
+            <div class="container " style="grid-row-start: 4; grid-row-end: span 1 ">
+                
+				<div id="code">
+#include <iostream>
+#include <cstdlib> 
+using namespace std;
+
+int main() 
+{ 
+    cout << "Hello, world!" << endl;
+    return 0; 
+}
+				</div>
+             <button id="run" onclick='run();'>Run</button> 
+
+			<p>Output:</p><pre id="output">Waiting...</pre>  
+            </div>
+			
+        </form>
+    </div>
+    <div class="footer ">
+    </div>
+	<style type="text/css" media="screen">
+        #code {
+            width: 100%;
+            float: left;
+            min-height: 100px;
+            overflow: hidden;
+        }
+    </style>
+	<script src="js/ace.js"></script>  
+    <script src="js/jquery-3.0.0.min.js"></script>
+	<script>
+        var code;
+
+        $(function () {
+            code = ace.edit("code");                      // создаем редактор из элемента с id="code"
+            code.setTheme("ace/theme/textmate");          // выбираем тему оформления для подсветки синтаксиса
+            code.getSession().setMode("ace/mode/c_cpp");  // говорим что код надо подсвечивать как C++ код
+            code.setShowPrintMargin(false);               // опционально: убираем вертикальную границу в 80 сиволов
+            code.setOptions({
+                maxLines: Infinity,                       // опционально: масштабировать редактор вертикально по размеру кода
+                fontSize: "12pt",                         // опционально: размер шрифта ставим побольше
+            });
+            code.$blockScrolling = Infinity;              // отключаем устаревшие, не поддерживаемые фишки редактора
+        });
+    </script>
+</body>
+
+</html>

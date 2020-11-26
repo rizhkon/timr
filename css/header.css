@@ -1,0 +1,15 @@
+.header {
+    top: 0;
+    left: 0;
+    background-color: #5CDB95;
+    width: 100%;
+    min-height: 60px;
+    max-height: 65px;
+    height: 10%;
+}
+
+.header #GM {
+    font-size: 30px;
+    margin: 15px 0 auto 15px;
+    color: #05386B;
+}
